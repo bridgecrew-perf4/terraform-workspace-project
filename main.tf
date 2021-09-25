@@ -1,3 +1,9 @@
+resource "digitalocean_project" "this" {
+  provider = digitalocean.bootstrap
+
+  name = "248-sh"
+}
+
 resource "google_project_service" "bootstrap" {
   provider = google.bootstrap
 
@@ -27,6 +33,7 @@ resource "google_project_service" "this" {
 
   for_each = toset([
     "cloudresourcemanager",
+    "cloudtrace",
     "compute",
     "container",
     "dns",

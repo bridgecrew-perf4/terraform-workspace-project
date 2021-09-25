@@ -1,3 +1,9 @@
+variable "do_token" {
+  description = "do auth token"
+  sensitive   = true
+  type        = string
+}
+
 variable "gcp_billing_account" {
   description = "gcp billing account"
   sensitive   = true

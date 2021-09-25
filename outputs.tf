@@ -1,3 +1,18 @@
+output "digitalocean_container_registry" {
+  value = {
+    app_auth = digitalocean_container_registry.app_auth
+  }
+}
+output "digitalocean_project" {
+  value = {
+    this = digitalocean_project.this
+  }
+}
+output "digitalocean_token" {
+  sensitive = true
+  value     = var.do_token
+}
+
 output "google_project" {
   value = {
     this = google_project.this
