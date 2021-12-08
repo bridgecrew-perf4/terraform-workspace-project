@@ -1,8 +1,3 @@
-output "digitalocean_container_registry" {
-  value = {
-    app_id = digitalocean_container_registry.app_id
-  }
-}
 output "digitalocean_project" {
   value = {
     this = digitalocean_project.this
