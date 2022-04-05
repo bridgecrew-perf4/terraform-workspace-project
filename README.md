@@ -1,2 +1,2 @@
 # terraform-workspace-project
-manages gcp
+manages basic infrastructure

@@ -1,26 +1,8 @@
+# from do variable set
+variable "do_region" {
+  type = string
+}
 variable "do_token" {
-  description = "do auth token"
-  sensitive   = true
-  type        = string
-}
-
-variable "gcp_billing_account" {
-  description = "gcp billing account"
-  sensitive   = true
-  type        = string
-}
-variable "gcp_bootstrap_credentials" {
-  description = "gcp bootstrap credentials"
-  sensitive   = true
-  type        = string
-}
-variable "gcp_bootstrap_project" {
-  description = "gcp bootstrap project"
-  sensitive   = true
-  type        = string
-}
-variable "gcp_organization_id" {
-  description = "gcp organization id"
-  sensitive   = true
-  type        = number
+  sensitive = true
+  type      = string
 }
