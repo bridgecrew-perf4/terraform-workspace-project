@@ -10,9 +10,6 @@ terraform {
     digitalocean = {
       source = "digitalocean/digitalocean"
     }
-    google = {
-      source = "hashicorp/google"
-    }
   }
   required_version = ">= 1"
 }
